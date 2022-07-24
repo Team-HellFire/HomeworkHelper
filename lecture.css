@@ -1,0 +1,27 @@
+#main-section .timer-span{
+    height: 230px;
+    width: 30%;
+    float: left;
+    border: 3px solid rgba(163, 177, 223, 0.938);
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+#main-section .eclass{
+    height: 730px;
+    width: 60%;
+    float: right;
+    border: 3px solid rgba(163, 177, 223, 0.938);
+    border-radius: 3px;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+#main-section .todo_list{
+    height: 465px;
+    width: 30%;
+    float: left;
+    border: 3px solid rgba(163, 177, 223, 0.938);
+    border-radius: 3px;
+    margin-top: 30px ;
+    margin-left: 50px;
+}
