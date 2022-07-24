@@ -1,0 +1,103 @@
+<script>
+let all="";
+function add(num){
+    all+=num;
+    document.getElementById("display").value=all;
+}
+function sum() {
+    document.getElementById("display").value = eval(all);
+  }
+  function clearDisplay() {
+    all = "";
+    document.getElementById("display").value = "0";
+  }
+  function tan(all) {
+    all.value = Math.tan((all.value * 3.141592) / 180);
+  }
+  function sin(all) {
+    all.value = Math.sin((all.value * 3.141592) / 180);
+  }
+  function cos(all) {
+    all.value = Math.cos((all.value * 3.141592) / 180);
+  }
+  function abs(all) {
+    all.value = Math.abs(all.value);
+  }
+  function pow(all){
+    all.value = Math.pow(all.value,2);
+  }
+</script>
+<form id="calculator">
+  <input readonly type="text" id="display" value="0">
+  <input type="button" class="trigon" value="tan" onclick="tan(this.form.display)">  
+
+  <input type="button" value="1" onclick="add('1')">
+  <input type="button" value="2" onclick="add('2')"> 
+  <input type="button" value="3" onclick="add('3')">
+  <input type="button" class="operator" value="+" onclick="add('+')">
+  <input type="button" class="trigon" value="sin" onclick="sin(this.form.display)">
+
+  <input type="button" value="4" onclick="add('4')">
+  <input type="button" value="5" onclick="add('5')">
+  <input type="button" value="6" onclick="add('6')">
+  <input type="button" class="operator" value="-" onclick="add('-')">
+  <input type="button" class="trigon" value="cos" onclick="cos(this.form.display)">
+
+  <input type="button" value="7" onclick="add('7')">
+  <input type="button" value="8" onclick="add('8')">
+  <input type="button" value="9" onclick="add('9')">
+  <input type="button" class="operator" value="*" onclick="add('*')">
+  <input type="button" class="squared" value="x^y" onclick="pow(this.form.display)">
+
+  <input type="button" class="clear" value="C" onclick="clearDisplay()">
+  <input type="button" value="0" onclick="add('0')">
+  <input type="button" class="sum" value="=" onclick="sum()">
+  <input type="button" class="operator" value="/" onclick="add('/')">
+  <input type="button" value="." onclick="add('.')">
+  <input type="button" class="abs" value="|x|" onclick="abs(this.form.display)">
+</form>
+<style>
+  #calculator{
+    width: 447px;
+    border: 2px solid #333;
+    background-color: white;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(6, 70px);
+    grid-auto-rows: 70px;
+    grid-gap: 5px;
+  }
+
+  #calculator input{
+    border: 2px solid #333;
+    border-radius: 4px;
+    font-size: 18px;
+  }
+  #calculator input:hover{
+    box-shadow: 1px 1px 2px #333;
+  }
+
+  #display{
+    grid-column: span 4;
+  }
+  .trigon{
+    grid-column: span 2;
+    background-color: rgb(62, 134, 72);
+  } 
+  .squared{
+    grid-column: span 2;
+    background-color: rgb(62, 134, 72);
+  }
+  .abs{
+    background-color: rgb(62, 134, 72);
+  }
+  .operator{
+    background-color: orange;
+  }
+  .sum{
+    background-color: orange;
+  }
+  .clear{
+    background-color: rgba(255, 52, 52, 0.966);
+  }
+</style>
