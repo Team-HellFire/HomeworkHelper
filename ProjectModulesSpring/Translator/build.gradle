@@ -1,0 +1,27 @@
+plugins {
+	id 'org.springframework.boot' version '2.7.1'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+	id 'war'
+}
+
+group = 'com.HellFire'
+version = '1.1.0-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'//톰캣 연동
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'javax.servlet:jstl'  //jsp 사용을 위해 가져옴
+	implementation "org.apache.tomcat.embed:tomcat-embed-jasper" //jsp 사용을 위해 가져옴
+	implementation 'com.googlecode.json-simple:json-simple:1.1.1'//string을 jason으로 바꾸기 위해 사용
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

@@ -1,0 +1,11 @@
+div {
+	width : 400px;
+  	height: 450px;
+	border : 1px solid black;
+	padding : 10px;
+}
+
+#checkGrammer {
+	width : 850px;
+	height : 1000px;
+}
