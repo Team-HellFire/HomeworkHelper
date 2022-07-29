@@ -4,26 +4,29 @@
     font-weight: normal;
     font-style: normal;
 }
-#main-header{
+
+#main-header {
     text-align: center;
     font-family: 'Arita-dotum-Medium';
 }
-#main-nav{
+
+#main-nav {
     height: 40px;
     width: 905px;
-    background-color:rgba(163, 177, 223, 0.938) ;
+    background-color: rgba(163, 177, 223, 0.938);
     border-radius: 5px;
     margin: 0 auto;
 }
 
 #main-nav ul li {
     list-style: none;
-    float:left;
+    float: left;
     width: 33.333%;
     line-height: 40px;
     vertical-align: middle;
 }
-#main-nav .menu{
+
+#main-nav .menu {
     text-decoration: none;
     display: block;
     width: 100px;
@@ -33,6 +36,7 @@
     color: white;
     text-align: center;
 }
-#main-nav .menu:hover{
-    color:black;
+
+#main-nav .menu:hover {
+    color: black;
 }

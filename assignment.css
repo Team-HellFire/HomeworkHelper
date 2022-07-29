@@ -1,4 +1,4 @@
-#assignment-section .translate .translate_text{
+#assignment-section .translate .translate_text {
     height: 650px;
     width: 60%;
     float: left;
@@ -7,7 +7,7 @@
     margin: 30px;
 }
 
-#assignment-section .translate .translate_menu{
+#assignment-section .translate .translate_menu {
     height: 500px;
     width: 20%;
     float: left;
@@ -16,7 +16,7 @@
     margin-top: 80px;
 }
 
-#assignment-section .article_search{
+#assignment-section .article_search {
     height: 50px;
     width: 90%;
     border: 3px solid rgba(163, 177, 223, 0.938);
