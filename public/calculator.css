@@ -1,0 +1,50 @@
+#calculator {
+    width: 447px;
+    border: 2px solid #333;
+    background-color: white;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(6, 70px);
+    grid-auto-rows: 70px;
+    grid-gap: 5px;
+}
+
+#calculator input {
+    border: 2px solid #333;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+#calculator input:hover {
+    box-shadow: 1px 1px 2px #333;
+}
+
+#display {
+    grid-column: span 4;
+}
+
+.trigon {
+    grid-column: span 2;
+    background-color: rgb(62, 134, 72);
+}
+
+.squared {
+    grid-column: span 2;
+    background-color: rgb(62, 134, 72);
+}
+
+.abs {
+    background-color: rgb(62, 134, 72);
+}
+
+.operator {
+    background-color: orange;
+}
+
+.sum {
+    background-color: orange;
+}
+
+.clear {
+    background-color: rgba(255, 52, 52, 0.966);
+}
