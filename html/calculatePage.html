@@ -5,8 +5,8 @@
     <title>과제도우미</title>
     <link rel="stylesheet" href="calculatePage.css">
     <link rel="stylesheet" href="menu.css">
-    <script type="text/javascript" src="/function/CalculatorFunction.js"></script>
-    <link rel="stylesheet" href="calculator.html">
+    <link rel="stylesheet" href="calculator.css">
+    <script type="text/javascript" src="calculatorFunction.js"></script>
 </head>
 <body>
     <header id="main-header">
@@ -15,16 +15,16 @@
     <nav id="main-nav">
         <div id="MenuBar">
             <ul>
-                <li><a class="menu" href="lecturePage.html">강의 기능</a></li>
-                <li><a class="menu" href="assignmentPage.html">과제 기능</a></li>
-                <li><a class="menu" href="calculatePage.html">계산 기능</a></li>
+                <li><a class="menu" href="./lecturePage.html">강의 기능</a></li>
+                <li><a class="menu" href="./assignmentPage.html">과제 기능</a></li>
+                <li><a class="menu" href="./calculatePage.html">계산 기능</a></li>
             </ul>
         </div>
     </nav>
     <section id="calculate-section">
        <div class="calculator">
             <form id="calculator">
-               <input readonly type="text" id="display" value="0">
+                <input readonly type="text" id="display" value="0">
                 <input type="button" class="trigon" value="tan" onclick="tan(this.form.display)">
         
                 <input type="button" value="1" onclick="add('1')">
@@ -53,7 +53,7 @@
                 <input type="button" class="abs" value="|x|" onclick="abs(this.form.display)">
             </form>
        </div>
-
     </section>
+    <button onclick = ></button>
 </body>
 </html>

@@ -7,19 +7,19 @@ server.get("/", (req, res) => {
     res.sendFile(__dirname + "/html/LoginPage.html");
 });
 
-server.get("/lecture", (req, res) => {
+server.get("/lecturePage.html", (req, res) => {
     res.sendFile(__dirname + "/html/lecturePage.html");
 });
 
-server.get("/calculate", (req, res) => {
+server.get("/calculatePage.html", (req, res) => {
   res.sendFile(__dirname + "/html/calculatePage.html");
 });
 
-server.get("/assignment", (req, res) => {
+server.get("/assignmentPage.html", (req, res) => {
   res.sendFile(__dirname + "/html/assignmentPage.html");
 });
 
-server.get("/calculatorTest", (req, res) => {
+server.get("/calculatorTest.html", (req, res) => {
     res.sendFile(__dirname + "/html/calculator.html");
 });
 
