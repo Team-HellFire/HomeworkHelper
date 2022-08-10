@@ -1,9 +1,0 @@
-#NetworkModule will apply when calcuator bug fixed
-
-*.js
-*.json
-
-.vscode/
-.github/
-node_modules/
-public/
