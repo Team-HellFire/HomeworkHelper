@@ -1,0 +1,28 @@
+ *{box-sizing: border-box; }
+ body{margin: 0;}
+ 
+  .stopwatch{
+    width: 80%;
+    margin: 10px auto; 
+    padding: 5px 0 15px;
+    text-align: center; 
+   
+  }
+  h1 > span{
+    display: inline-block;
+    width: 40px;
+  }
+  button{
+    color: darkslategray; 
+    background-color: lightgray;
+    font-size: 16px; 
+    padding: 6px;
+    width: 100px; 
+    border: none; 
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  button:active{
+    color: lightgray;
+    background-color: darkslategray;
+  }

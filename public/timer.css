@@ -1,0 +1,19 @@
+*{box-sizing: border-box; }
+body{margin: 0;}
+
+.timer{
+    width: 80%;
+    margin: 10px auto;
+    padding: 5px 0 15px;
+    text-align: center;
+}
+button{
+    font-size: 17px;
+    padding: 6px;
+    margin: 5px;
+    width: 80px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
